@@ -3,12 +3,11 @@
 /*
  Project Euler problem 12
  Find the first triangle number with over 500 divisors	
- Spoiler alert! The answer is 76576500
 */
 
 int num_divisors(int num);
 
-int main (void)
+int main ()
 {
 	unsigned int curr_number  = 1; // Largest num in current triangle num
 	unsigned long int triangle_num = 1; // Current triangle num
@@ -19,7 +18,7 @@ int main (void)
 		triangle_num += curr_number; // Calc next triangle num 
 	}
 	// Print result
-	printf("The triangle number %d was found to have %d divisors.\n",
+	printf("The triangle number %lu was found to have %d divisors.\n",
 		triangle_num, num_divisors(triangle_num));
 }
 
