@@ -9,7 +9,7 @@ int num_divisors(int num);
 
 int main ()
 {
-	unsigned int curr_number  = 1; // Largest num in current triangle num
+	unsigned int curr_number = 1; // Largest num in current triangle num
 	unsigned long int triangle_num = 1; // Current triangle num
 	
 	while (num_divisors(triangle_num) <= 501)
@@ -19,7 +19,7 @@ int main ()
 	}
 	// Print result
 	printf("The triangle number %lu was found to have %d divisors.\n",
-		triangle_num, num_divisors(triangle_num));
+	triangle_num, num_divisors(triangle_num));
 }
 
 // num_divisors returns the number of
